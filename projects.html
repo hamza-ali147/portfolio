@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Projects Section -->
+     <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title">My <span>Projects</span></h2>
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <!-- <button class="filter-btn" data-filter="app">App</button> -->
+            <!-- <button class="filter-btn" data-filter="design">Design</button> -->
+          </div>
+          <div class="projects-grid">
+            <div class="project-item" data-category="web">
+              <img src="images/Screenshot 2025-03-28 000155.png" alt="Project 1" />
+              <div class="project-overlay">
+                <h3>ElectricShop E-commerce</h3>
+                <!-- <p>Full-featured online store with payment integration</p> -->
+                <a href="https://github.com/hamza-ali147/electric-shop.git" class="project-link"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <div class="project-item" data-category="app">
+              <img
+                src="images/screencapture-127-0-0-1-8001-reports-2025-03-27-23_24_24.png"
+                alt="Project 2"
+              />
+              <div class="project-overlay">
+                <h3>Hotel Management</h3>
+                <!-- <p>Productivity app with cloud sync</p> -->
+                <a
+                  href="https://github.com/hamza-ali147/hotel.git"
+                  class="project-link"
+                  ><i class="fas fa-link"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-item" data-category="web">
+              <img src="images/screencapture-127-0-0-1-8001-dashboard-2025-03-27-23_48_42.png" alt="Project 3" />
+              <div class="project-overlay">
+                <h3>Single Admin</h3>
+                <!-- <p>Custom portfolio for a photographer</p> -->
+                <a href="https://github.com/hamza-ali147/singleadmin.git" class="project-link"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <div class="project-item" data-category="design">
+              <img src="images/Screenshot 2025-03-27 235429.png" alt="Project 4" />
+              <div class="project-overlay">
+                <h3> E-commerce</h3>
+                <!-- <p>Full-featured online store with payment integration</p> -->
+                <a href="https://github.com/hamza-ali147/ecomerce.git" class="project-link"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <div class="project-item" data-category="app">
+              <img src="images/screencapture-127-0-0-1-8001-2025-03-27-23_57_12.png" alt="Project 5" />
+              <div class="project-overlay">
+                <h3>School Management</h3>
+                <!-- <p>Real-time weather forecasts</p> -->
+                <a href="https://github.com/hamza-ali147/school_managment.git" class="project-link"><i class="fas fa-link"></i></a>
+              </div>
+            </div>
+            <!-- <div class="project-item" data-category="web">
+              <img src="https://via.placeholder.com/400x300" alt="Project 6" />
+              <div class="project-overlay">
+                <h3>Blog Platform</h3>
+                <p>CMS for content creators</p>
+                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
